@@ -7,7 +7,7 @@ import { siteConfig } from "../config";
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
       <div class="lg:col-span-4">
         <h2
-          class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900"
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl [overflow-wrap:anywhere] font-bold text-gray-900"
         >
           About Me
         </h2>
@@ -19,9 +19,13 @@ import { siteConfig } from "../config";
       </div>
 
       <div class="lg:col-span-8 space-y-8">
-        <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
-          {siteConfig.aboutMe}
-        </p>
+        <div class="space-y-6">
+          {siteConfig.aboutMe.map((paragraph) => (
+            <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
+              {paragraph}
+            </p>
+          ))}
+        </div>
 
         <div class="pt-4">
           <div class="flex flex-wrap gap-3">
@@ -34,6 +38,17 @@ import { siteConfig } from "../config";
             }
           </div>
         </div>
+
+        {siteConfig.handsOn && (
+          <div class="pt-4">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
+              {siteConfig.handsOn.title}
+            </h3>
+            <p class="mt-2 text-base sm:text-lg leading-relaxed text-gray-600">
+              {siteConfig.handsOn.description}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   </div>

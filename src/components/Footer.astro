@@ -19,10 +19,11 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           {siteConfig.title}
         </p>
         <div class="flex gap-x-6">
+          {siteConfig.social.email && (
           <a
             href={`mailto:${siteConfig.social.email}`}
             aria-label="Email"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)] focus-visible:text-[var(--accent-color)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent-color)] rounded-sm"
             style={`--accent-color: ${siteConfig.accentColor}`}
           >
             <svg
@@ -44,12 +45,14 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               <path d="M3 7l9 6l9 -6"></path>
             </svg>
           </a>
+          )}
+          {siteConfig.social.linkedin && (
           <a
             href={siteConfig.social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)] focus-visible:text-[var(--accent-color)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent-color)] rounded-sm"
             style={`--accent-color: ${siteConfig.accentColor}`}
           >
             <svg
@@ -70,12 +73,14 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               ></path></svg
             >
           </a>
+          )}
+          {siteConfig.social.twitter && (
           <a
             href={siteConfig.social.twitter}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)] focus-visible:text-[var(--accent-color)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent-color)] rounded-sm"
             style={`--accent-color: ${siteConfig.accentColor}`}
           >
             <svg
@@ -94,12 +99,14 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg
             >
           </a>
+          )}
+          {siteConfig.social.github && (
           <a
             href={siteConfig.social.github}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)]"
+            class="text-gray-600 transition-colors duration-300 hover:text-[var(--accent-color)] focus-visible:text-[var(--accent-color)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent-color)] rounded-sm"
             style={`--accent-color: ${siteConfig.accentColor}`}
           >
             <svg
@@ -118,6 +125,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               ></path></svg
             >
           </a>
+          )}
         </div>
       </div>
 
