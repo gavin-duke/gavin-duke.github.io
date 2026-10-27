@@ -46,18 +46,21 @@ export const siteConfig = {
           alt: "SetShift home screen with the heading “Make today count.” and a Resume workout card for a Chest & Back focus session.",
           width: 1206,
           height: 2622,
+          frame: "iphone",
         },
         {
           src: "/projects/setshift/02-progress.png",
           alt: "SetShift Progress screen showing a Back Squat history chart with a selected 185 lb × 8 set.",
           width: 1206,
           height: 2622,
+          frame: "iphone",
         },
         {
           src: "/projects/setshift/03-workout.png",
           alt: "SetShift active workout screen for Dumbbell Bench Press with completed sets, weight and rep controls, and a Log set 3 button.",
           width: 1206,
           height: 2622,
+          frame: "iphone",
         },
       ],
       skills: [
@@ -80,6 +83,7 @@ export const siteConfig = {
           alt: "SmallTown Sites homepage showing responsive website design and customer inquiry features.",
           width: 2560,
           height: 1420,
+          frame: "macbook",
         },
       ],
       skills: [
@@ -152,8 +156,8 @@ export const siteConfig = {
     },
     {
       school: "Branch Area Careers Center (BACC)",
-      degree: "CAD/CAM Studies — Two-Year Career & Technical Education Program",
-      dateRange: "",
+      degree: "CAD/CAM Studies — Two‑Year Career & Technical Education Program",
+      dateRange: "2016 – 2018",
       achievements: [
         "Studied AutoCAD and Autodesk Inventor, gaining hands-on experience in 2D drafting, parametric 3D modeling, and mechanical assembly design. Created individual engine components and assembled them into an interactive 3D mechanism using assembly constraints and moving parts.",
       ],

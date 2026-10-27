@@ -4,7 +4,14 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
 // Optional per-project screenshots (see PORTFOLIO-SETUP.md). width/height are the
 // image's real pixel size and are used only to preserve its aspect ratio.
-type Screenshot = { src: string; alt: string; width: number; height: number };
+type Screenshot = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  // Optional flat device frame drawn in CSS around the image.
+  frame?: "iphone" | "macbook";
+};
 ---
 
 {
@@ -108,15 +115,30 @@ type Screenshot = { src: string; alt: string; width: number; height: number };
                             >
                               {screenshots.map((shot) => (
                                 <div class="snap-center shrink-0 w-full flex justify-center">
-                                  <img
-                                    src={shot.src}
-                                    alt={shot.alt}
-                                    width={shot.width}
-                                    height={shot.height}
-                                    loading="lazy"
-                                    decoding="async"
-                                    class="h-[380px] md:h-[420px] w-auto max-w-full object-contain rounded-lg border border-gray-200"
-                                  />
+                                  {shot.frame === "iphone" ? (
+                                    <div class="relative inline-flex rounded-[34px] bg-black p-[5px] ring-1 ring-gray-400 shadow-md">
+                                      <img
+                                        src={shot.src}
+                                        alt={shot.alt}
+                                        width={shot.width}
+                                        height={shot.height}
+                                        loading="lazy"
+                                        decoding="async"
+                                        class="block h-[370px] md:h-[410px] w-auto rounded-[29px]"
+                                      />
+                                      <span aria-hidden="true" class="absolute top-[13px] left-1/2 -translate-x-1/2 w-[28%] h-[11px] rounded-full bg-black" />
+                                    </div>
+                                  ) : (
+                                    <img
+                                      src={shot.src}
+                                      alt={shot.alt}
+                                      width={shot.width}
+                                      height={shot.height}
+                                      loading="lazy"
+                                      decoding="async"
+                                      class="h-[380px] md:h-[420px] w-auto max-w-full object-contain rounded-lg border border-gray-200"
+                                    />
+                                  )}
                                 </div>
                               ))}
                             </div>
@@ -139,15 +161,35 @@ type Screenshot = { src: string; alt: string; width: number; height: number };
                         )}
 
                         {screenshots.length === 1 && (
-                          <img
-                            src={screenshots[0].src}
-                            alt={screenshots[0].alt}
-                            width={screenshots[0].width}
-                            height={screenshots[0].height}
-                            loading="lazy"
-                            decoding="async"
-                            class={`h-auto rounded-lg border border-gray-200 ${screenshots[0].height > screenshots[0].width ? "mx-auto max-h-[420px] w-auto" : "w-full"}`}
-                          />
+                          screenshots[0].frame === "macbook" ? (
+                            <div class="w-full">
+                              <div class="relative mx-auto w-[94%] rounded-t-[12px] rounded-b-[3px] bg-black p-[6px] pt-[10px] ring-1 ring-gray-400">
+                                <span aria-hidden="true" class="absolute top-[3px] left-1/2 -translate-x-1/2 w-[4px] h-[4px] rounded-full bg-gray-600" />
+                                <img
+                                  src={screenshots[0].src}
+                                  alt={screenshots[0].alt}
+                                  width={screenshots[0].width}
+                                  height={screenshots[0].height}
+                                  loading="lazy"
+                                  decoding="async"
+                                  class="block w-full h-auto rounded-[2px]"
+                                />
+                              </div>
+                              <div aria-hidden="true" class="relative h-[9px] w-full rounded-t-[2px] rounded-b-[14px] bg-gray-300">
+                                <span class="absolute top-0 left-1/2 -translate-x-1/2 h-[4px] w-[16%] rounded-b-md bg-gray-400" />
+                              </div>
+                            </div>
+                          ) : (
+                            <img
+                              src={screenshots[0].src}
+                              alt={screenshots[0].alt}
+                              width={screenshots[0].width}
+                              height={screenshots[0].height}
+                              loading="lazy"
+                              decoding="async"
+                              class={`h-auto rounded-lg border border-gray-200 ${screenshots[0].height > screenshots[0].width ? "mx-auto max-h-[420px] w-auto" : "w-full"}`}
+                            />
+                          )
                         )}
 
                         {project.skills && project.skills.length > 0 && (
