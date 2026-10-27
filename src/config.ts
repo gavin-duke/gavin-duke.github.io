@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Gavin Duke",
   title: "IT Support & Networking",
   description:
-    "Self-taught technology enthusiast with practical experience in user support, access management, software configuration, and independent technical projects.",
+    "Practical experience in user support, access management, software configuration, and home networking, plus independent iOS and web projects.",
   accentColor: "#1d4ed8",
   social: {
     // Add only confirmed public contact details approved for publication.
@@ -12,24 +12,29 @@ export const siteConfig = {
     github: "https://github.com/gavin-duke",
   },
   aboutMe: [
-    "I'm working toward a career in IT support and networking, building on hands-on experience supporting users, configuring software, and troubleshooting technical issues.",
-    "My background includes managing Discord support requests, configuring permissions and third-party bots, developing independent iOS and web projects, and working in roles that required communication, documentation, and problem-solving.",
-    "I'm continuing to develop my knowledge of computer systems and networking, with plans to pursue a Computer Networking AAS at Kellogg Community College.",
+    "I'm building a career in IT support and networking. My experience comes from supporting users, configuring software and home networks, and troubleshooting problems hands-on.",
+    "That includes Discord member support and bot configuration, independent iOS and web projects, and roles that required communication, documentation, and problem-solving.",
+    "I plan to pursue a Computer Networking AAS at Kellogg Community College, potentially starting in Spring 2027.",
   ],
   handsOn: {
     title: "Hands-On Technical Troubleshooting",
     description:
-      "Provided informal technical support for family members, troubleshooting home Wi-Fi connectivity, configuring routers, and restoring connections for smart-home devices. Experience includes Google Nest thermostats, smart lighting, robotic vacuums, and basic network settings.",
+      "Personal and informal technical work, on my own equipment and for family members.",
     items: [
       {
-        title: "Windows System Troubleshooting & Maintenance",
+        title: "Windows maintenance and recovery",
         description:
-          "On personal Windows systems, use diagnostics, recovery and maintenance utilities, Device Manager, and system settings to install software and troubleshoot operating system stability and performance issues.",
+          "Installed software and troubleshot operating system stability and performance issues on personal Windows systems, using diagnostics, recovery and maintenance utilities, Device Manager, and system settings.",
       },
       {
-        title: "Home Networking & Performance Testing",
+        title: "Home network",
         description:
-          "Configured a home network on Frontier 2 Gig fiber with eero Pro 7 mesh hardware, including wired and wireless connections and device connectivity. Recorded speed tests of 2.61 Gbps download and 2.65 Gbps upload.",
+          "Configured a home network on Frontier 2 Gig fiber with eero Pro 7 mesh hardware, covering router settings, wired and wireless connections, and device connectivity. Recorded speed tests of 2.61 Gbps download and 2.65 Gbps upload.",
+      },
+      {
+        title: "Family and smart-home support",
+        description:
+          "Provided informal support for family members, including restoring Wi-Fi connectivity after a household Wi-Fi reset by reconnecting smart lights, a robotic vacuum, and a Google Nest thermostat, and reconfiguring the thermostat's heating controls.",
       },
     ],
   },
@@ -38,7 +43,7 @@ export const siteConfig = {
     "Account Access & Permissions",
     "Wi-Fi & Device Troubleshooting",
     "Software & Bot Configuration",
-    "macOS & iOS",
+    "Windows, macOS & iOS",
     "Web Development",
     "Application Testing",
     "AI-Assisted Workflows",
@@ -49,7 +54,7 @@ export const siteConfig = {
       subtitle: "Native iOS Fitness Application",
       status: "In Development",
       description:
-        "Developing a native iOS fitness application using SwiftUI and AI-assisted development tools. Hands-on work includes testing application features, investigating bugs, refining interface behavior, and iterating on workout tracking and progress functionality.",
+        "Building a native iOS fitness app with SwiftUI and AI-assisted development tools. Work includes testing features, investigating bugs, refining interface behavior, and iterating on workout tracking and progress functionality.",
       // Leave blank until a public destination is supplied and approved.
       link: "",
       screenshots: [
@@ -76,10 +81,10 @@ export const siteConfig = {
         },
       ],
       skills: [
-        "Software testing",
+        "Software Testing",
         "Troubleshooting",
         "Debugging",
-        "Technical problem-solving",
+        "Technical Problem-Solving",
       ],
     },
     {
@@ -99,10 +104,10 @@ export const siteConfig = {
         },
       ],
       skills: [
-        "Web development",
-        "Responsive design",
-        "Lead capture",
-        "Technical troubleshooting",
+        "Web Development",
+        "Responsive Design",
+        "Lead Capture",
+        "Technical Troubleshooting",
       ],
     },
   ],
@@ -116,49 +121,43 @@ export const siteConfig = {
         "Handled member support tickets involving subscription verification, access permissions, and Discord role assignments.",
         "Troubleshot missing membership roles and helped paying subscribers access restricted channels.",
         "Installed and configured existing third-party Discord bots, including commands, permissions, roles, and server settings.",
-        "Guided members through server navigation, helping them locate relevant channels and resources.",
-        "Assisted users with account-related questions, platform functionality, and general support requests.",
-      ],
-    },
-    {
-      group: "Additional Professional Experience",
-      company: "AAA Advantage Home Care",
-      title: "In-Home Caregiver",
-      dateRange: "June 2026 – Present",
-      bullets: [
-        "Coordinate daily responsibilities, adapt to individual needs, and provide dependable one-on-one assistance.",
-      ],
-    },
-    {
-      group: "",
-      company: "The Vine Early Learning Center",
-      title: "Lead Teacher",
-      dateRange: "July 2023 – May 2026",
-      bullets: [
-        "Managed daily operations, maintained accurate documentation, and communicated regularly with parents and staff.",
-        "Coordinated competing priorities while addressing questions and adapting to changing situations.",
-      ],
-    },
-    {
-      group: "",
-      company: "Pansophia Academy",
-      title: "Lead Custodian",
-      dateRange: "July 2022 – May 2023",
-      bullets: [
-        "Trained team members, delegated responsibilities, and coordinated operational priorities with school personnel.",
-        "Identified facility issues, communicated maintenance needs, and supported organized daily operations.",
-      ],
-    },
-    {
-      group: "",
-      company: "Insight Hospital & Medical Center",
-      title: "Evening Custodian",
-      dateRange: "November 2020 – June 2022",
-      bullets: [
-        "Worked independently in a hospital environment, following established procedures and escalating issues when necessary.",
+        "Guided members through server navigation and answered account, platform, and general support questions.",
       ],
     },
   ],
+  otherExperience: {
+    heading: "Additional Professional Experience",
+    roles: [
+      {
+        title: "In-Home Caregiver",
+        company: "AAA Advantage Home Care",
+        dateRange: "June 2026 – Present",
+        description:
+          "Provide dependable one-on-one care, coordinating daily responsibilities and adapting to individual needs.",
+      },
+      {
+        title: "Lead Teacher",
+        company: "The Vine Early Learning Center",
+        dateRange: "July 2023 – May 2026",
+        description:
+          "Managed daily operations and documentation, communicated regularly with parents and staff, and balanced competing priorities.",
+      },
+      {
+        title: "Lead Custodian",
+        company: "Pansophia Academy",
+        dateRange: "July 2022 – May 2023",
+        description:
+          "Trained team members, delegated responsibilities, and reported facility issues and maintenance needs to school personnel.",
+      },
+      {
+        title: "Evening Custodian",
+        company: "Insight Hospital & Medical Center",
+        dateRange: "November 2020 – June 2022",
+        description:
+          "Worked independently in a hospital, following established procedures and escalating issues when necessary.",
+      },
+    ],
+  },
   education: [
     {
       school: "Coldwater High School",
@@ -173,12 +172,6 @@ export const siteConfig = {
       achievements: [
         "Studied AutoCAD and Autodesk Inventor, gaining hands-on experience in 2D drafting, parametric 3D modeling, and mechanical assembly design. Created individual engine components and assembled them into an interactive 3D mechanism using assembly constraints and moving parts.",
       ],
-    },
-    {
-      school: "Kellogg Community College",
-      degree: "Computer Networking AAS",
-      dateRange: "Planned, prospective Spring 2027 start",
-      achievements: [],
     },
   ],
 };

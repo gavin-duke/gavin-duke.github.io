@@ -72,6 +72,46 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                 </div>
                 </>
               ))}
+              {siteConfig.otherExperience && (
+                <>
+                  <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mt-12 mb-6">
+                    {siteConfig.otherExperience.heading}
+                  </h3>
+                  <div class="relative">
+                    <div
+                      class="absolute left-1/2 -top-2 w-4 h-4 bg-white border-2 rounded-full -translate-x-1/2 z-20 transition-all duration-300"
+                      style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`}
+                    />
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
+                      <ul class="divide-y divide-gray-100">
+                        {siteConfig.otherExperience.roles.map((role) => (
+                          <li class="py-4 first:pt-0 last:pb-0">
+                            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between sm:gap-x-8">
+                              <div>
+                                <h4 class="text-base sm:text-lg font-semibold text-gray-900">
+                                  {role.title}
+                                </h4>
+                                <p
+                                  class="text-sm sm:text-base"
+                                  style={`color: ${siteConfig.accentColor}`}
+                                >
+                                  {role.company}
+                                </p>
+                              </div>
+                              <span class="text-xs text-gray-500 mt-1 sm:mt-0 sm:text-right sm:shrink-0">
+                                {role.dateRange}
+                              </span>
+                            </div>
+                            <p class="mt-2 text-sm sm:text-base leading-relaxed text-pretty text-gray-600">
+                              {role.description}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
