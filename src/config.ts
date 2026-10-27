@@ -20,6 +20,18 @@ export const siteConfig = {
     title: "Hands-On Technical Troubleshooting",
     description:
       "Provided informal technical support for family members, troubleshooting home Wi-Fi connectivity, configuring routers, and restoring connections for smart-home devices. Experience includes Google Nest thermostats, smart lighting, robotic vacuums, and basic network settings.",
+    items: [
+      {
+        title: "Windows System Troubleshooting & Maintenance",
+        description:
+          "On personal Windows systems, use diagnostics, recovery and maintenance utilities, Device Manager, and system settings to install software and troubleshoot operating system stability and performance issues.",
+      },
+      {
+        title: "Home Networking & Performance Testing",
+        description:
+          "Configured a home network on Frontier 2 Gig fiber with eero Pro 7 mesh hardware, including wired and wireless connections and device connectivity. Recorded speed tests of 2.61 Gbps download and 2.65 Gbps upload.",
+      },
+    ],
   },
   skills: [
     "User Support & Ticketing",

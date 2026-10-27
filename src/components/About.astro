@@ -47,6 +47,20 @@ import { siteConfig } from "../config";
             <p class="mt-2 text-base sm:text-lg leading-relaxed text-gray-600">
               {siteConfig.handsOn.description}
             </p>
+            {siteConfig.handsOn.items?.length > 0 && (
+              <div class="mt-5 space-y-4">
+                {siteConfig.handsOn.items.map((item) => (
+                  <div>
+                    <h4 class="text-base sm:text-lg font-semibold text-gray-900">
+                      {item.title}
+                    </h4>
+                    <p class="mt-1 text-base sm:text-lg leading-relaxed text-pretty text-gray-600">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>
