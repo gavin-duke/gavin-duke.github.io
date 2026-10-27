@@ -16,7 +16,7 @@ type Screenshot = {
 
 {
   hasProjects && (
-    <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
+    <section id="projects" class="p-8 sm:p-12 md:p-16 lg:px-24 lg:py-16">
       <div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           <div class="lg:col-span-4">
@@ -30,7 +30,7 @@ type Screenshot = {
           </div>
 
           <div class="lg:col-span-8">
-            <div class="space-y-8">
+            <div class="space-y-6">
               {siteConfig.projects.map((project, index) => {
                 const Component = project.link ? "a" : "div";
                 const screenshots =
@@ -95,7 +95,7 @@ type Screenshot = {
                         </div>
 
                         <p
-                          class={`text-base sm:text-lg text-gray-600 leading-relaxed ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
+                          class={`text-base sm:text-lg text-gray-600 leading-relaxed text-pretty ${project.link ? "pr-12 sm:pr-14 md:pr-16" : ""}`}
                         >
                           {project.description}
                         </p>

@@ -99,7 +99,7 @@ export const siteConfig = {
       group: "",
       company: "Stock Trading Discord Community | Approximately 200,000 Members",
       title: "Community Moderator & Member Support",
-      dateRange: "Volunteer / Remote | Approximately 1 year",
+      dateRange: "Volunteer / Remote | February 2022 – July 2023",
       bullets: [
         "Handled member support tickets involving subscription verification, access permissions, and Discord role assignments.",
         "Troubleshot missing membership roles and helped paying subscribers access restricted channels.",
