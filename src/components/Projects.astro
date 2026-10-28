@@ -134,7 +134,7 @@ type Screenshot = {
                                       alt={shot.alt}
                                       width={shot.width}
                                       height={shot.height}
-                                      loading="lazy"
+                                      loading="eager"
                                       decoding="async"
                                       class="h-[380px] md:h-[420px] w-auto max-w-full object-contain rounded-lg border border-gray-200"
                                     />
@@ -170,7 +170,7 @@ type Screenshot = {
                                   alt={screenshots[0].alt}
                                   width={screenshots[0].width}
                                   height={screenshots[0].height}
-                                  loading="lazy"
+                                  loading="eager"
                                   decoding="async"
                                   class="block w-full h-auto rounded-[2px]"
                                 />
@@ -185,7 +185,7 @@ type Screenshot = {
                               alt={screenshots[0].alt}
                               width={screenshots[0].width}
                               height={screenshots[0].height}
-                              loading="lazy"
+                              loading="eager"
                               decoding="async"
                               class={`h-auto rounded-lg border border-gray-200 ${screenshots[0].height > screenshots[0].width ? "mx-auto max-h-[420px] w-auto" : "w-full"}`}
                             />
