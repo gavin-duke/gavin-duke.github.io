@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Gavin Duke",
-  title: "IT Support & Networking",
+  title: "Technology & Software",
   description:
-    "Practical experience in user support, access management, software configuration, and home networking, plus independent iOS and web projects.",
+    "Hands-on experience in technical support, software configuration, and troubleshooting, alongside independent iOS and web development projects.",
   accentColor: "#1d4ed8",
   social: {
     // Add only confirmed public contact details approved for publication.
@@ -12,9 +12,8 @@ export const siteConfig = {
     github: "https://github.com/gavin-duke",
   },
   aboutMe: [
-    "I'm building a career in IT support and networking. My experience comes from supporting users, configuring software and home networks, and troubleshooting problems hands-on.",
-    "That includes Discord member support and bot configuration, independent iOS and web projects, and roles that required communication, documentation, and problem-solving.",
-    "I plan to pursue a Computer Networking AAS at Kellogg Community College, potentially starting in Spring 2027.",
+    "I'm interested in how technology works and how to make it work better for people. My experience comes from supporting users, configuring software and home networks, troubleshooting problems hands-on, and building my own projects.",
+    "That includes Discord member support and bot configuration, an iOS app, a small-business web services project, and roles that required communication, documentation, and problem-solving.",
   ],
   handsOn: {
     title: "Hands-On Technical Troubleshooting",
