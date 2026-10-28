@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Gavin Duke",
-  title: "Technology & Software",
+  title: "Technology, Software & Support",
   description:
-    "Hands-on experience in technical support, software configuration, and troubleshooting, alongside independent iOS and web development projects.",
+    "I build and test digital projects, troubleshoot software and devices, and help people solve technical problems—from iOS apps and websites to user support and home networks.",
   accentColor: "#1d4ed8",
   social: {
     // Add only confirmed public contact details approved for publication.
@@ -12,8 +12,8 @@ export const siteConfig = {
     github: "https://github.com/gavin-duke",
   },
   aboutMe: [
-    "I'm interested in how technology works and how to make it work better for people. My experience comes from supporting users, configuring software and home networks, troubleshooting problems hands-on, and building my own projects.",
-    "That includes Discord member support and bot configuration, an iOS app, a small-business web services project, and roles that required communication, documentation, and problem-solving.",
+    "I'm interested in how technology works and how to make it work better for people.",
+    "My experience comes from supporting a large Discord community, building my own projects, and troubleshooting the devices and networks around me. Work in education and caregiving added strong communication and documentation habits.",
   ],
   handsOn: {
     title: "Hands-On Technical Troubleshooting",
@@ -23,17 +23,17 @@ export const siteConfig = {
       {
         title: "Windows maintenance and recovery",
         description:
-          "Installed software and troubleshot operating system stability and performance issues on personal Windows systems, using diagnostics, recovery and maintenance utilities, Device Manager, and system settings.",
+          "Installed software and troubleshot stability and performance issues on personal Windows systems using diagnostics, recovery tools, and Device Manager.",
       },
       {
         title: "Home network",
         description:
-          "Configured a home network on Frontier 2 Gig fiber with eero Pro 7 mesh hardware, covering router settings, wired and wireless connections, and device connectivity. Recorded speed tests of 2.61 Gbps download and 2.65 Gbps upload.",
+          "Configured a Frontier 2 Gig fiber home network with eero Pro 7 mesh hardware, covering router settings and wired and wireless devices. Recorded speed tests of 2.61 Gbps down and 2.65 Gbps up.",
       },
       {
         title: "Family and smart-home support",
         description:
-          "Provided informal support for family members, including restoring Wi-Fi connectivity after a household Wi-Fi reset by reconnecting smart lights, a robotic vacuum, and a Google Nest thermostat, and reconfiguring the thermostat's heating controls.",
+          "Restored connectivity after a household Wi-Fi reset by reconnecting smart lights, a robotic vacuum, and a Google Nest thermostat, then reconfiguring the thermostat's heating controls.",
       },
     ],
   },
@@ -53,7 +53,7 @@ export const siteConfig = {
       subtitle: "Native iOS Fitness Application",
       status: "In Development",
       description:
-        "Building a native iOS fitness app with SwiftUI and AI-assisted development tools. Work includes testing features, investigating bugs, refining interface behavior, and iterating on workout tracking and progress functionality.",
+        "Building a native iOS fitness app in SwiftUI with AI‑assisted development tools. My role spans interface design, visual refinement, feature testing, and troubleshooting, including diagnosing animation and interface issues across workout tracking and progress features.",
       // Leave blank until a public destination is supplied and approved.
       link: "",
       screenshots: [
@@ -80,10 +80,10 @@ export const siteConfig = {
         },
       ],
       skills: [
-        "Software Testing",
-        "Troubleshooting",
-        "Debugging",
-        "Technical Problem-Solving",
+        "SwiftUI",
+        "iOS Development",
+        "UI Design",
+        "Feature Testing",
       ],
     },
     {
@@ -91,7 +91,7 @@ export const siteConfig = {
       subtitle: "Small Business Websites & Digital Services",
       status: "Independent Project",
       description:
-        "Building SmallTown Sites, an independent digital-services business focused on helping local businesses attract customers, capture opportunities, and streamline communication. Services include responsive website development, local SEO, quote capture, missed-call text-back, and automated customer follow-ups. SmallTown Sites offers individual services and customizable bundles without requiring businesses to purchase a new website.",
+        "Developing SmallTown Sites, an independent digital services project for small businesses. My work includes responsive website development, interface design, interactive service demonstrations, and planning digital tools for customer inquiries and follow-up.",
       link: "",
       screenshots: [
         {
@@ -105,8 +105,7 @@ export const siteConfig = {
       skills: [
         "Web Development",
         "Responsive Design",
-        "Lead Capture",
-        "Technical Troubleshooting",
+        "UI Design",
       ],
     },
   ],
