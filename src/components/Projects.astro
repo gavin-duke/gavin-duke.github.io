@@ -122,8 +122,8 @@ type Screenshot = {
                                         alt={shot.alt}
                                         width={shot.width}
                                         height={shot.height}
-                                        loading="lazy"
-                                        decoding="async"
+                                        loading="eager"
+                                        decoding="sync"
                                         class="block h-[370px] md:h-[410px] w-auto rounded-[29px]"
                                       />
                                       <span aria-hidden="true" class="absolute top-[13px] left-1/2 -translate-x-1/2 w-[28%] h-[11px] rounded-full bg-black" />
