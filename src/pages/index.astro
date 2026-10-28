@@ -35,5 +35,14 @@ import "../styles/global.css";
       <Education />
     </section>
     <Footer />
+    <script is:inline>
+      // Always start at the top, including on refresh and back/forward.
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+      const toTop = () => window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      toTop();
+      window.addEventListener("load", toTop);
+      window.addEventListener("pageshow", toTop);
+    </script>
   </body>
 </html>
